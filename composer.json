@@ -1,0 +1,43 @@
+{
+    "name": "eleganttechnologies/grok4",
+    "description": "test",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/eleganttechnologies/grok4",
+    "keywords": ["Laravel", "Grok4"],
+    "require": {
+        "illuminate/support": "~5|~6|~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0|~9.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4|~5|~6",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ElegantTechnologies\\Grok4\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ElegantTechnologies\\Grok4\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ElegantTechnologies\\Grok4\\Grok4ServiceProvider"
+            ],
+            "aliases": {
+                "Grok4": "ElegantTechnologies\\Grok4\\Facades\\Grok4"
+            }
+        }
+    }
+}
